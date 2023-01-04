@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -26,6 +26,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./public/styles/root.css">
+  <link rel="stylesheet" href="./public/styles/canvas.css">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
@@ -60,7 +62,7 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Acceuil</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resumer</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Résumé </span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Photo</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -71,10 +73,14 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
+    <canvas>
+      
+    </canvas>
+    <div class="hero-container" data-aos="fade-in" style="z-index: 21">
       <h1>Parfait Rabemananjara</h1>
-      <p>je suis un  <span class="typed" data-typed-items="Designer, Developpeur, Freelancer"></span></p>
+      <p>je suis un  <span class="typed" data-typed-items="Designer, Développeur, Freelancer"></span></p>
     </div>
+    
   </section><!-- End Hero -->
 
   <main id="main">
@@ -93,7 +99,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>  Web Developer &amp; Application developer &amp; UI/UX Designer
+            <h3>  Développeur Web &amp; Développeur d'application &amp; UI/UX Designer
               .</h3>
             <p class="fst-italic">
               
@@ -104,15 +110,15 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Nom:</strong> <span>Rabemananjara Mandimbison </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Date de naissance:</strong> <span>22 Mars 2001</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nationaliter:</strong> <span>Malagasy</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Telephone:</strong> <span>+231348073683</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Téléphone :</strong> <span>+261 34 33 912 80</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Antananarivo 101, MADAGASCAR</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Prenom:</strong> <span>Todihery Parfait</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Prénoms :</strong> <span>Todihery Parfait</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Licence</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Diplome:</strong> <span>Licence en web et design</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>rbparfait2121@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
@@ -121,7 +127,7 @@
             <p>
               Actuellement à la recherche d’un nouveau challenge, mon profil correspond tout à fait aux qualités attendues pour être développeur informatique. En effet, en plus de mes savoir-faire, je peux compter sur mon sens des responsabilités et sur ma rigueur. Je suis aussi quelqu’un d’ouvert avec un sens facile du contact et une vraie envie de progresser. Si vous etes interesse a mon profil , voici un lien menant vers mon CV ci dessous .
             <br>
-            <a href="https://drive.google.com/file/d/17va4LpHkOVTerhnMb6QgjlqLfIeU80s6/view?usp=share_link" class="btn btn-primary">Telecharger CV</a>
+            <a href="https://drive.google.com/file/d/17va4LpHkOVTerhnMb6QgjlqLfIeU80s6/view?usp=share_link" class="btn btn-primary">Télécharger CV</a>
             </p>
           </div>
         </div>
@@ -144,7 +150,7 @@
           <div class="col-lg-12 col-md-12 d-md-flex align-items-md-stretch" data-aos="fade-up">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <p><strong>Liens vers toutes les projets realiser</strong> </p>
+              <p><strong>Liens vers toutes les projets réaliser</strong> </p>
               <p style="color: grey;"> <a href="https://parfait2121.github.io/mylinktree.github.io/" class="btn btn-primary" style="width: 50%; color: white;"> Page Projet personnel >></a></p>
             </div>
           </div>
@@ -160,8 +166,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Experiences</h2>
-          <p>Maitrise de plusieur language informatique et quelque logiciel de base necessaire pour development informatique , dont ces barres represente l'experience par rapport aux logiciels et languages.</p>
+          <h2>Expériences</h2>
+          <p>Maîtrise de plusieurs langage informatique et quelque logiciel de base nécessaire pour développement informatique , dont ces barres représente l’expérience par rapport aux logiciels et langages.</p>
         </div>
 
         <div class="row skills-content">
@@ -280,8 +286,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p>Voici ci dessous les resumes de mes etudes et quelque experiences professionnel vecu :</p>
+          <h2>Résumé</h2>
+          <p>Voici ci dessous les résumés de mes études et quelque expériences professionnel vécu :</p>
         </div>
 
         <div class="row">
@@ -289,7 +295,7 @@
             <h3 class="resume-title">Sommaire</h3>
             <div class="resume-item pb-0">
               <h4>Parfait Rabemananjara</h4>
-              <p><em> Developpeur web et mobile innovant et soucieux des délais  dans la conception et le développement  centrés sur l'utilisateur, du concept initial au livrable final et soigné.</em></p>
+              <p><em> Développeur web et mobile innovant et soucieux des délais  dans la conception et le développement  centrés sur l'utilisateur, du concept initial au livrable final et soigné.</em></p>
               <ul>
                 <li>Lot II D 57 fa bis Manjakaray ,Antananarivo 101 , MADAGASCAR</li>
                 <li>+231348073683</li>
@@ -297,9 +303,9 @@
               </ul>
             </div>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Éducation</h3>
             <div class="resume-item">
-              <h4>Licence en Developement Web &amp; Mobile</h4>
+              <h4>Licence en Développement Web &amp; Mobile</h4>
               <h5>2019 - 2022</h5>
               <p><em>ITU Andohoranofotsy, Antananarivo 101, MADAGASCAR</em></p>
               <p>IT University est un établissement d’enseignement supérieur privé spécialisé en informatique, créé en 2011, pour répondre aux  besoins du secteur professionnel en matière de nouvelles technologies.</p>
@@ -308,45 +314,45 @@
             <div class="resume-item">
               <h4>Bacc serie D</h4>
               <h5>2019</h5>
-              <p><em>Lycee Prive Aceem Ankadivato, Antananarivo 101, MADAGASCAR</em></p>
-              <p>Le groupe educatif ACEEM, créé par Mr Ratrema William, possède de nombreuses branches: Cours, Radio, IEFPA , LPA, IES, Université, Espace ACEEM, ACEEM Business School.</p>
+              <p><em>Lycée Prive Aceem Ankadivato, Antananarivo 101, MADAGASCAR</em></p>
+              <p>Le groupe éducatif ACEEM, créé par Mr Ratrema William, possède de nombreuses branches: Cours, Radio, IEFPA , LPA, IES, Université, Espace ACEEM, ACEEM Business School.</p>
               <p><a href="http://aceemgroupe.com/">Visitez leurs sites</a></p>
             </div>
             <div class="resume-item">
               <h4>BEPC &amp; CEPE </h4>
               <h5>2011 - 2016 </h5>
               <p><em>ESCA Antanimena, Antananarivo 101, MADAGASCAR</em></p>
-              <p>L’Ecole Sacré-Cœur Antanimena (ESCA) est une école privée catholique, administrée par la Congrégation des Frères du Sacré-Cœur. Elle est régie par le statut de l’Ecole Catholique à Madagascar. A l’ESCA, l’esprit chrétien motive en priorité la présence des élèves et commande l’enrichissement de leur personnalité.</p>
+              <p>L’école Sacré-Cœur Antanimena (ESCA) est une école privée catholique, administrée par la Congrégation des Frères du Sacré-Cœur. Elle est régie par le statut de l’école Catholique à Madagascar. A l’ESCA, l’esprit chrétien motive en priorité la présence des élèves et commande l’enrichissement de leur personnalité.</p>
               <p><a href="http://www.esca.mg/">Visitez leurs sites</a></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experience professionnel</h3>
+            <h3 class="resume-title">Expérience professionnel</h3>
             <div class="resume-item">
               <h4>Projet professionnel</h4>
               <h5>2019 - 2022f</h5>
               <p><em>ITU, Andohoranofotsy TANA, MADAGASCAR </em></p>
               <ul>
-                <li>Lien ci dessous pour acceder a tout mes projet personnel pendant mon cursus universataire a l'ITU</li>
+                <li>Lien ci dessous pour accéder a tout mes projet personnel pendant mon cursus universitaire a l'ITU</li>
                 <li> <a href="https://parfait2121.github.io/mylinktree.github.io/" class="btn btn-primary" style="width: 50%; color: white;"> Page Projet personnel >></a>. </li>
               </ul>
             </div>
             <div class="resume-item">
               <h4>Participation concours VR GAM JAM </h4>
               <h5>MAI - 2022</h5>
-              <p><em> 2 eme place au concours organiser par institut francais de madagascar </em></p>
+              <p><em> 2 eme place au concours organiser par institut français de Madagascar </em></p>
               <ul>
-                <li>Lien ci dessous pour telecharger mon appli que j'ai developper pendant le concours</li>
-                <li> <a href="https://drive.google.com/file/d/1iQ-W3R5AY5RWLqlvhb7OK2vz_FkV01BY/view?usp=sharing" class="btn btn-primary" style="width: 50%; color: white;"> Telecharger >></a>. </li>
+                <li>Lien ci dessous pour télécharger mon appli que j'ai développer pendant le concours</li>
+                <li> <a href="https://drive.google.com/file/d/1iQ-W3R5AY5RWLqlvhb7OK2vz_FkV01BY/view?usp=sharing" class="btn btn-primary" style="width: 50%; color: white;"> Télécharger >></a>. </li>
               </ul>
             </div>
             <div class="resume-item">
               <h4>Stage de 6 mois </h4>
-              <h5>Juillet/2022 - Decembre/2022 </h5>
-              <p><em> Ministere de l'economie et des finances </em></p>
+              <h5>Juillet/2022 - Décembre/2022 </h5>
+              <p><em> Ministère de l’Économie et des Finances </em></p>
               <ul>
                 <li>Stage de 3 mois </li>
-                <li>Refonte application gestion de ticket et developpement portail / gestion intervention SIIGFP (developpement coter portail)</li>
+                <li>Refonte application gestion de ticket et développement portail / gestion intervention SIIGFP (développement coter portail)</li>
                 <li>Technologie SPRING BOOT / ANGULAR / JWT</li>
               </ul>
             </div>
@@ -363,7 +369,7 @@
 
         <div class="section-title">
           <h2>Photo</h2>
-          <p>Voici quelque gallerie photo.</p>
+          <p>Voici quelque gallérie photo.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -507,37 +513,37 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Disponible pour tout type de service dans le domaine du development Web  &amp;  application &amp; design  &amp; mobile &amp; ... </p>
+          <p>Disponible pour tout type de service dans le domaine du développement Web  &amp;  application &amp; design  &amp; mobile &amp; ... </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-gear-fill"></i></div>
             <h4 class="title"><a href="">Développement d’applications (Programmation) </a></h4>
-            <p class="description">Aisance avec la language Java   pour la Programmation d'application (POO , javaFX et swing pour l'interface graphique) </p>
+            <p class="description">Aisance avec la langage Java   pour la Programmation d'application (POO , javaFX et swing pour l'interface graphique) </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-window"></i></div>
             <h4 class="title"><a href="">Développement Web</a></h4>
-            <p class="description"> Du cote back end : bonne maitrise du MVC avec des framework necessaire du cote back-end avec ses frameworks (java jee , spring , ejb , hybernate , php , code igniter , symphony , JavaScript, angular ...) <br>
-            Du cote front end : bonne maitrise du language JS &amp; CSS avec quelque framework (bootstrap , angular , jquery , chartJS , ...) <br>
-            Avec une bonne connaissance et experience avec les web services (Consomation , Architecture REST - SOAP).
+            <p class="description"> Du cote back end : bonne maîtrise du MVC avec des framework nécessaire du cote back-end avec ses frameworks (java jee , spring , ejb , hybernate , php , code igniter , symphony , JavaScript, angular ...) <br>
+            Du cote front end : bonne maîtrise du langage JS &amp; CSS avec quelque framework (bootstrap , angular , jquery , chartJS , ...) <br>
+            Avec une bonne connaissance et expérience avec les web services (Consommation , Architecture REST - SOAP).
           </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-phone"></i></div>
-            <h4 class="title"><a href=""> Developement Mobile</a></h4>
-            <p class="description">Developement mobile multiplateforme avec ionic 4  </p>
+            <h4 class="title"><a href=""> Développement Mobile</a></h4>
+            <p class="description">Développement mobile multi plate-forme avec ionic 4  </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-card-image"></i></div>
-            <h4 class="title"><a href="">Multimedia &amp; Design</a></h4>
-            <p class="description">Une bonne maitrise de Photoshop et Moyen connaissance de logiciel de montage de video et 3D comme After Effect &amp; Cinema 4D  </p>
+            <h4 class="title"><a href="">Multimédia &amp; Design</a></h4>
+            <p class="description">Une bonne maîtrise de Photoshop et Moyen connaissance de logiciel de montage de vidéo et 3D comme After Effect &amp; Cinéma 4D  </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-joystick"></i></div>
-            <h4 class="title"><a href="">Developement Jeux Video</a></h4>
-            <p class="description">Quelque connaissance et experience sur la domaine du development de jeu video avec UNITY 3D (C#).
+            <h4 class="title"><a href="">Développement Jeux Vidéo</a></h4>
+            <p class="description">Quelque connaissance et expérience sur la domaine du développement de jeu vidéo avec UNITY 3D (C#).
             </p>
           </div>
         </div>
@@ -578,7 +584,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Telephone:</h4>
-                <p>+231348073683</p>
+                <p>+261 34 33 912 80</p>
               </div>
 
               <iframe src="https://www.google.com/maps/d/embed?mid=1SiOHPQ9lPeMh3FzPrB9YiDQ5oerRbLjH&ehbc=2E312F" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -609,9 +615,9 @@
               <div class="my-3">
                 <div class="loading">Chargement</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Votre message est envoye. Merci!</div>
+                <div class="sent-message">Votre message est envoyé. Merci!</div>
               </div>
-              <div class="text-center"><button type="submit" name="btn-send">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="btn-send">Envoyer Message</button></div>
             </form>
           </div>
 
@@ -646,6 +652,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./public/scripts/canvas.js"></script>
+  <script src="./public/scripts/dat.gui.min.js"></script>
+  <script src="./public/scripts/script.js"></script>
 
 </body>
 
