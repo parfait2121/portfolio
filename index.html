@@ -45,12 +45,7 @@
   <div id="loading">
     <img id="loading-image" src="assets/img/loading.gif" alt="Loading..." />
   </div>
-  <script type="text/javascript">
-    const div = document.getElementById("loading-image");
-    div.style.left = `${(window.innerWidth - div.offsetWidth) / 2}px`;
-    div.style.top = `${(window.innerHeight - div.offsetHeight) / 2}px`;
-
-  </script>
+  
   
 
   <!-- ======= Mobile nav toggle button ======= -->
@@ -698,7 +693,9 @@
   function cacherDiv() {
     document.getElementById("loading").style.display = "none";
   }
-  setTimeout(cacherDiv, 7000);
+
+  window.onload = cacherDiv;
+
 </script>
 
   
