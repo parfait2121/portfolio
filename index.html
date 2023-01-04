@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Epilogue:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -27,7 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./public/styles/root.css">
+  <link rel="stylesheet" href="./public/neon.css">
   <link rel="stylesheet" href="./public/styles/canvas.css">
+  <link rel="stylesheet" href="./public/styles/loader.css">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
@@ -38,6 +40,18 @@
 </head>
 
 <body>
+  
+
+  <div id="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading..." />
+  </div>
+  <script type="text/javascript">
+    const div = document.getElementById("loading-image");
+    div.style.left = `${(window.innerWidth - div.offsetWidth) / 2}px`;
+    div.style.top = `${(window.innerHeight - div.offsetHeight) / 2}px`;
+
+  </script>
+  
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -58,14 +72,53 @@
         </div>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
+      <nav id="navbar" class="nav-menu navbar" style="display: flex;
+    justify-content: center;
+    align-items: center;">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Acceuil</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Résumé </span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Photo</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto neonbtn"> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-home"></i> Acceuil
+          </a>
+          </li>
+          <li><a href="#about" class="nav-link scrollto neonbtn" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-user"></i>A propos</a>
+          </li>
+          <li><a href="#resume" class="nav-link scrollto neonbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-file-blank"></i>Résumé </a>
+          </li>
+          <li><a href="#portfolio" class="nav-link scrollto neonbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-book-content"></i> 
+            Photo</a></li>
+          <li><a href="#services" class="nav-link scrollto neonbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-server"></i>Services</a>
+          </li>
+          <li><a href="#contact" class="nav-link scrollto neonbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bx bx-envelope"></i> Contact</a>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -77,8 +130,8 @@
       
     </canvas>
     <div class="hero-container" data-aos="fade-in" style="z-index: 21">
-      <h1>Parfait Rabemananjara</h1>
-      <p>je suis un  <span class="typed" data-typed-items="Designer, Développeur, Freelancer"></span></p>
+      <h1 style="font-family: Epilogue">Parfait Rabemananjara</h1>
+      <p style="font-family: Epilogue">je suis un  <span class="typed" data-typed-items="Designer, Développeur, Freelancer"></span></p>
     </div>
     
   </section><!-- End Hero -->
@@ -109,7 +162,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nom:</strong> <span>Rabemananjara Mandimbison </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Date de naissance:</strong> <span>22 Mars 2001</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nationaliter:</strong> <span>Malagasy</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationalité:</strong> <span>Malgache</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Téléphone :</strong> <span>+261 34 33 912 80</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Antananarivo 101, MADAGASCAR</span></li>
                 </ul>
@@ -118,14 +171,14 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Prénoms :</strong> <span>Todihery Parfait</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Diplome:</strong> <span>Licence en web et design</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Diplôme:</strong> <span>Licence en web et design</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>rbparfait2121@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
               </div>
             </div>
             <p>
-              Actuellement à la recherche d’un nouveau challenge, mon profil correspond tout à fait aux qualités attendues pour être développeur informatique. En effet, en plus de mes savoir-faire, je peux compter sur mon sens des responsabilités et sur ma rigueur. Je suis aussi quelqu’un d’ouvert avec un sens facile du contact et une vraie envie de progresser. Si vous etes interesse a mon profil , voici un lien menant vers mon CV ci dessous .
+              Actuellement à la recherche d’un nouveau challenge, mon profil correspond tout à fait aux qualités attendues pour être développeur informatique. En effet, en plus de mes savoir-faire, je peux compter sur mon sens des responsabilités et sur ma rigueur. Je suis aussi quelqu’un d’ouvert avec un sens facile du contact et une vraie envie de progresser. Si vous êtes intéresse a mon profil , voici un lien menant vers mon CV ci dessous .
             <br>
             <a href="https://drive.google.com/file/d/17va4LpHkOVTerhnMb6QgjlqLfIeU80s6/view?usp=share_link" class="btn btn-primary">Télécharger CV</a>
             </p>
@@ -168,6 +221,7 @@
         <div class="section-title">
           <h2>Expériences</h2>
           <p>Maîtrise de plusieurs langage informatique et quelque logiciel de base nécessaire pour développement informatique , dont ces barres représente l’expérience par rapport aux logiciels et langages.</p>
+          
         </div>
 
         <div class="row skills-content">
@@ -351,7 +405,7 @@
               <h5>Juillet/2022 - Décembre/2022 </h5>
               <p><em> Ministère de l’Économie et des Finances </em></p>
               <ul>
-                <li>Stage de 3 mois </li>
+                <li>Stage de 6 mois </li>
                 <li>Refonte application gestion de ticket et développement portail / gestion intervention SIIGFP (développement coter portail)</li>
                 <li>Technologie SPRING BOOT / ANGULAR / JWT</li>
               </ul>
@@ -390,7 +444,7 @@
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                
               </div>
             </div>
           </div>
@@ -400,7 +454,6 @@
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -410,7 +463,6 @@
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -420,7 +472,6 @@
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -430,7 +481,6 @@
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -440,7 +490,6 @@
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -450,7 +499,6 @@
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -460,7 +508,6 @@
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -470,7 +517,6 @@
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -479,7 +525,6 @@
               <img src="assets/img/portfolio/soutenance1.JPG" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/soutenance1.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -488,7 +533,6 @@
               <img src="assets/img/portfolio/soutenance2.JPG" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/soutenance2.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -497,7 +541,6 @@
               <img src="assets/img/portfolio/soutenance3.JPG" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/soutenance3.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -630,15 +673,35 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+   
+
+    
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>2022</span></strong>
-      </div>
+       <div id="copyright"></div>
+       <script>
+          const paragraph = `
+          <p>
+            Copyright &copy; ${new Date().getFullYear()} Parfait Rb
+          </p>
+        `;
+
+          document.getElementById('copyright').innerHTML = paragraph;
+        </script>
       
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script>
+  function cacherDiv() {
+    document.getElementById("loading").style.display = "none";
+  }
+  setTimeout(cacherDiv, 7000);
+</script>
+
+  
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -655,6 +718,9 @@
   <script src="./public/scripts/canvas.js"></script>
   <script src="./public/scripts/dat.gui.min.js"></script>
   <script src="./public/scripts/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
 
 </body>
 
