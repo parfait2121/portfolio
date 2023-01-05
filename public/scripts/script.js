@@ -1438,6 +1438,7 @@ canvas.addEventListener('mousemove', e => {
 
 window.addEventListener('mouseup', () => {
     updatePointerUpData(pointers[0]);
+    
 });
 
 canvas.addEventListener('touchstart', e => {
